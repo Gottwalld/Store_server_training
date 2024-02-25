@@ -8,13 +8,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Store</title>
+    <title>Store - Заказы</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/static/vendor/css/index.css" rel="stylesheet">
+    <link href="/static/vendor/css/orders.css" rel="stylesheet">
 
 </head>
 
@@ -64,22 +64,50 @@
 
 <!-- Page Content -->
 <section>
-    <!--    <div class="alert alert-light text-center" role="alert">-->
-    <!--        Информационное сообщение-->
-    <!--    </div>-->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <h1 class="mt-5">Store</h1>
-                <p>
-                    Новые образы и лучшие бренды на Store.
-                    Бесплатная доставка по всему миру! Аутлет: до -70% Собственный бренд. -20% новым покупателям.
-                </p>
-                <button id="start-purchase-btn" type="button" class="btn btn-lg">
-                    <a id="start-purchase-link" href="/products/">
-                        Начать покупки
-                    </a>
-                </button>
+    <div class="container pt-5">
+        <div class="text-center mt-5">
+            <h1>Заказы</h1>
+            <div class="orders mt-5">
+                <table class="table">
+                    <thead>
+                    <tr class="table-light">
+                        <th scope="col">#</th>
+                        <th scope="col">Статус</th>
+                        <th scope="col">Создан</th>
+                        <th scope="col">Итого</th>
+                        <th scope="col">Действие</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Оплачен</td>
+                        <td>21 авг. 21 года</td>
+                        <td>5 070 руб.</td>
+                        <td>
+                            <a href="order.html">просмотреть</a>
+                        </td>
+                    </tr>
+                    <tr class="table-success">
+                        <th scope="row">2</th>
+                        <td>Досталвен</td>
+                        <td>16 июля 21 года</td>
+                        <td>4 876 руб.</td>
+                        <td>
+                            <a href="order.html">просмотреть</a>
+                        </td>
+                    </tr>
+                    <tr class="table-info">
+                        <th scope="row">3</th>
+                        <td>В пути</td>
+                        <td>14 нояб. 21 года</td>
+                        <td>9 566 руб.</td>
+                        <td>
+                            <a href="order.html">просмотреть</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
