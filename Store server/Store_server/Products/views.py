@@ -9,7 +9,7 @@ def index(request):
         'promo': True,
     }
     
-    return render(request, 'Product\index.html', context)
+    return render(request, 'Product/index.html', context)
 
 def products(request):
     context = {
@@ -18,4 +18,4 @@ def products(request):
         'products_item': Product.objects.all(),
         'category' : Product_Category.objects.all(), 
     }
-    return render(request, 'Product\products.html', context)
+    return render(request, 'Product/products.html', context)
